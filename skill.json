@@ -1,0 +1,35 @@
+{
+  "name": "genpark-git-commit-graph-branch-conflict-coordinator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-agent git commit graph visualizer, branch conflict predictor & merge coordinator.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "git-graph",
+    "branch-coordinator",
+    "merge-conflict-predictor",
+    "code-flow",
+    "ph-august-dev"
+  ],
+  "inputs": {
+    "active_branches": {
+      "type": "array"
+    },
+    "target_base_branch": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "conflict_risk_score": {
+      "type": "number"
+    },
+    "rebase_order": {
+      "type": "array"
+    },
+    "visual_graph_mermaid": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
